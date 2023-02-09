@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT aaxIdentifier="MathWorks.distorConEQ" buildAAX="0" buildAU="0"
+              buildAUv3="0" buildRTAS="0" buildStandalone="0" buildVST="0"
+              buildVST3="0" bundleIdentifier="MathWorks.distorConEQ" companyCopyright=""
+              companyEmail="" companyName="MathWorks" companyWebsite="" displaySplashScreen="0"
+              enableIAA="0" headerPath="" id="NHblJj" includeBinaryInAppConfig="1"
+              name="distorConEQ" pluginAAXCategory="2" pluginAUExportPrefix="distorConEQAU"
+              pluginChannelConfigs="{2, 2}" pluginCode="BbDv" pluginDesc="distorConEQ"
+              pluginEditorRequiresKeys="0" pluginIsMidiEffectPlugin="0" pluginIsSynth="0"
+              pluginManufacturer="MathWorks" pluginManufacturerCode="Math"
+              pluginName="distorConEQ" pluginProducesMidiOut="0" pluginRTASCategory=""
+              pluginWantsMidiIn="0" projectType="audioplug" reportAppUsage="0"
+              splashScreenColour="Dark" version="1.0.0" defines="JUCE_VST3_CAN_REPLACE_VST2=0"
+              jucerFormatVersion="1">
+  <MAINGROUP id="yjfreO" name="distorConEQ">
+    <GROUP id="{433E061D-1682-9DBC-0868-35F3D2A9D095}" name="assets">
+      <FILE id="O7efcp" name="perillaSombra.png" compile="0" resource="1"
+            file="assets/perillaSombra.png"/>
+      <FILE id="ekFr8C" name="perilla.png" compile="0" resource="1" file="assets/perilla.png"/>
+    </GROUP>
+    <GROUP id="{315416B7-1A91-5F1C-CADC-7954A28EC1BA}" name="Source">
+      <FILE compile="0" file="Source/distorConEQPluginEditor.h" id="GsQPkW"
+            name="distorConEQPluginEditor.h" resource="0"/>
+      <FILE compile="0" file="Source/distorConEQPluginEditorResources.h"
+            id="E1LMWc" name="distorConEQPluginEditorResources.h" resource="0"/>
+      <FILE compile="1" file="Source/distorConEQPluginProcessor.cpp" id="XTrBz7"
+            name="distorConEQPluginProcessor.cpp" resource="0"/>
+      <FILE compile="1" file="Source/rt_nonfinite.cpp" id="kptdxc" name="rt_nonfinite.cpp"
+            resource="0"/>
+      <FILE compile="1" file="Source/rtGetNaN.cpp" id="kDWcyF" name="rtGetNaN.cpp"
+            resource="0"/>
+      <FILE compile="1" file="Source/rtGetInf.cpp" id="Cfp4Z8" name="rtGetInf.cpp"
+            resource="0"/>
+      <FILE compile="1" file="Source/distorConEQ.cpp" id="xGox7q" name="distorConEQ.cpp"
+            resource="0"/>
+      <FILE compile="0" file="Source/coder_array.h" id="ggWxG7" name="coder_array.h"
+            resource="0"/>
+      <FILE compile="0" file="Source/rtwtypes.h" id="AuqlzT" name="rtwtypes.h"
+            resource="0"/>
+      <FILE compile="0" file="Source/distorConEQ_types.h" id="Fpk6tF" name="distorConEQ_types.h"
+            resource="0"/>
+      <FILE compile="0" file="Source/rt_nonfinite.h" id="F5vlk9" name="rt_nonfinite.h"
+            resource="0"/>
+      <FILE compile="0" file="Source/rtGetNaN.h" id="kS97ZB" name="rtGetNaN.h"
+            resource="0"/>
+      <FILE compile="0" file="Source/rtGetInf.h" id="GhFNcW" name="rtGetInf.h"
+            resource="0"/>
+      <FILE compile="0" file="Source/distorConEQ.h" id="oBxGqr" name="distorConEQ.h"
+            resource="0"/>
+      <FILE compile="0" file="Source/tmwtypes.h" id="n8HgGt" name="tmwtypes.h"
+            resource="0"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" vst3Folder="">
+      <CONFIGURATIONS>
+        <CONFIGURATION enablePluginBinaryCopyStep="1" isDebug="1" linkTimeOptimisation="0"
+                       name="Debug" optimisation="1" targetName="distorConEQ"/>
+        <CONFIGURATION enablePluginBinaryCopyStep="1" isDebug="0" linkTimeOptimisation="1"
+                       name="Release" optimisation="3" targetName="distorConEQ"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="modules"/>
+        <MODULEPATH id="juce_audio_devices" path="modules"/>
+        <MODULEPATH id="juce_audio_formats" path="modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="modules"/>
+        <MODULEPATH id="juce_audio_processors" path="modules"/>
+        <MODULEPATH id="juce_audio_utils" path="modules"/>
+        <MODULEPATH id="juce_core" path="modules"/>
+        <MODULEPATH id="juce_data_structures" path="modules"/>
+        <MODULEPATH id="juce_events" path="modules"/>
+        <MODULEPATH id="juce_graphics" path="modules"/>
+        <MODULEPATH id="juce_gui_basics" path="modules"/>
+        <MODULEPATH id="juce_gui_extra" path="modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2017 targetFolder="Builds/VisualStudio2017" vst3Folder="" windowsTargetPlatformVersion="10.0.15063.0">
+      <CONFIGURATIONS>
+        <CONFIGURATION debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="1"
+                       generateManifest="1" isDebug="1" linkTimeOptimisation="0" name="Debug"
+                       optimisation="1" targetName="distorConEQ" winArchitecture="x64"
+                       winWarningLevel="2"/>
+        <CONFIGURATION debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="1"
+                       generateManifest="1" isDebug="0" linkTimeOptimisation="1" name="Release"
+                       optimisation="3" targetName="distorConEQ" winArchitecture="x64"
+                       winWarningLevel="2"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="modules"/>
+        <MODULEPATH id="juce_audio_devices" path="modules"/>
+        <MODULEPATH id="juce_audio_formats" path="modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="modules"/>
+        <MODULEPATH id="juce_audio_processors" path="modules"/>
+        <MODULEPATH id="juce_audio_utils" path="modules"/>
+        <MODULEPATH id="juce_core" path="modules"/>
+        <MODULEPATH id="juce_data_structures" path="modules"/>
+        <MODULEPATH id="juce_events" path="modules"/>
+        <MODULEPATH id="juce_graphics" path="modules"/>
+        <MODULEPATH id="juce_gui_basics" path="modules"/>
+        <MODULEPATH id="juce_gui_extra" path="modules"/>
+      </MODULEPATHS>
+    </VS2017>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="distorConEQ" winWarningLevel="2"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="distorConEQ" winWarningLevel="2"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="modules"/>
+        <MODULEPATH id="juce_audio_devices" path="modules"/>
+        <MODULEPATH id="juce_audio_formats" path="modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="modules"/>
+        <MODULEPATH id="juce_audio_processors" path="modules"/>
+        <MODULEPATH id="juce_audio_utils" path="modules"/>
+        <MODULEPATH id="juce_core" path="modules"/>
+        <MODULEPATH id="juce_data_structures" path="modules"/>
+        <MODULEPATH id="juce_events" path="modules"/>
+        <MODULEPATH id="juce_graphics" path="modules"/>
+        <MODULEPATH id="juce_gui_basics" path="modules"/>
+        <MODULEPATH id="juce_gui_extra" path="modules"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="0" useGlobalPath="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="0" useGlobalPath="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="0" useGlobalPath="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="0" useGlobalPath="1"
+            useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="0" useGlobalPath="1"
+            useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="0" useGlobalPath="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="0" useGlobalPath="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="0" useGlobalPath="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="0" useGlobalPath="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="0" useGlobalPath="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="0" useGlobalPath="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="0" useGlobalPath="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
